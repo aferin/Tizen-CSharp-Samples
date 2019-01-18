@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<w:CirclePage xmlns="http://xamarin.com/schemas/2014/forms"
+              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:w="clr-namespace:Tizen.Wearable.CircularUI.Forms;assembly=Tizen.Wearable.CircularUI.Forms"
+              x:Class="MediaToolSample.Views.MainPage"
+              NavigationPage.HasNavigationBar="False"
+              BackgroundColor="#1b1b1b">
+
+    <StackLayout HorizontalOptions="CenterAndExpand" 
+                 VerticalOptions="CenterAndExpand">
+
+        <StackLayout Orientation="Vertical">
+            <Button Text="Create Audio Format" FontSize="Micro"  Command="{Binding CreateFormatCommand}"/>
+            <Button Text="Create Media Packet with Audio" FontSize="Micro" Command="{Binding CreatePacketCommand}"/>
+            <Button Text="Set Video Format To Packet" FontSize="Micro" Command="{Binding OtherFormatCommand}"/>
+            <Button Text="Destroy Media Packet" FontSize="Micro" Command="{Binding DestroyPacketCommand}"/>
+            <Button Text="Get Media Format" FontSize="Micro" Command="{Binding GetFormatCommand}"/>
+        </StackLayout>
+    </StackLayout>
+
+</w:CirclePage>
