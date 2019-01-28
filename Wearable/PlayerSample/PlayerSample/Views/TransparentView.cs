@@ -44,7 +44,10 @@ namespace PlayerSample
         {
             try
             {
-                evas_object_render_op_set(_transparent.RealHandle, 2);
+                // Only for tizen 5.0 or higher
+                _transparent.RenderOperation = RenderOp.Copy;
+                // compatible tizen 4.0
+                //evas_object_render_op_set(_transparent.RealHandle, 2);
             }
             catch (Exception e)
             {
