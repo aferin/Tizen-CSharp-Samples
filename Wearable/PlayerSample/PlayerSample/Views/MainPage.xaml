@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<w:CirclePage xmlns="http://xamarin.com/schemas/2014/forms"
+              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:w="clr-namespace:Tizen.Wearable.CircularUI.Forms;assembly=Tizen.Wearable.CircularUI.Forms"
+              x:Class="PlayerSample.Views.MainPage"
+              NavigationPage.HasNavigationBar="False"
+              BackgroundColor="#1b1b1b">
+
+    <!--<ContentPage.BindingContext>
+        <local:PlayViewModel />
+    </ContentPage.BindingContext>-->
+    <!--<AbsoluteLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <ContentView AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All"
+                             Content="{Binding Display}"/>
+    </AbsoluteLayout>-->
+    <!--<w:CirclePage.ToolbarItems>
+        <w:CircleToolbarItem
+            Command="{Binding PrepareCommand}"
+            Text="prepare" />
+        <w:CircleToolbarItem
+            Command="{Binding PlayCommand}"
+            Text="play" />
+        <w:CircleToolbarItem
+            Command="{Binding StreamInfoCommand}"
+            Text="info" />
+    </w:CirclePage.ToolbarItems>
+    <StackLayout HorizontalOptions="CenterAndExpand" 
+                 VerticalOptions="CenterAndExpand">
+
+        <StackLayout Orientation="Vertical">
+            <Button Text="Prepare" Command="{Binding PrepareCommand}"/>
+            <Button Text="{Binding PlayText}" Command="{Binding PlayCommand}"/>
+            <Button Text="Info" Command="{Binding StreamInfoCommand}"/>
+        </StackLayout>
+    </StackLayout>-->
+
+</w:CirclePage>
