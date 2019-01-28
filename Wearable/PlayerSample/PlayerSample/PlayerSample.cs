@@ -26,16 +26,10 @@ namespace PlayerSample
         static void Main(string[] args)
         {
             var app = new Program();
-            Xamarin.Forms.Platform.Tizen.Forms.SetFlags("LightweightPlatform_Experimental");
             global::Xamarin.Forms.Platform.Tizen.Forms.Init(app);
             global::Tizen.Wearable.CircularUI.Forms.Renderer.FormsCircularUI.Init();
             VideoViewController.MainWindowProvider = () => app.MainWindow;
             app.Run(args);
-        }
-        protected override void OnPreCreate()
-        {
-            base.OnPreCreate();
-            MainWindow.Alpha = true;
         }
     }
 }

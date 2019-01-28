@@ -2,10 +2,14 @@
 <w:CirclePage xmlns="http://xamarin.com/schemas/2014/forms"
               xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
               xmlns:w="clr-namespace:Tizen.Wearable.CircularUI.Forms;assembly=Tizen.Wearable.CircularUI.Forms"
+              xmlns:local="clr-namespace:PlayerSample;assembly=PlayerSample"
               x:Class="PlayerSample.Views.MainPage"
               NavigationPage.HasNavigationBar="False"
               BackgroundColor="#1b1b1b">
 
+    <AbsoluteLayout>
+        <local:TransparentView AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"></local:TransparentView>
+    </AbsoluteLayout>
     <!--<ContentPage.BindingContext>
         <local:PlayViewModel />
     </ContentPage.BindingContext>-->
